@@ -1,18 +1,11 @@
-import markdownStyles from "./markdown-styles.module.css";
-
-type Props = {
+type PostBodyProps = {
   content: string;
 };
 
-const PostBody = ({ content }: Props) => {
+export function PostBody({ content }: PostBodyProps) {
   return (
     <div className="max-w-2xl mx-auto">
-      <div
-        className={markdownStyles["markdown"]}
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
+      <div className="prose prose-invert" dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
-};
-
-export default PostBody;
+}
