@@ -1,22 +1,17 @@
-type Post = {
+interface Post  {
 	title: string;
 	description: string;
 	content: string;
 	coverImageUrl: string;
 	date: string;
 	author: Author;
-	tags: Tag[];
+	tags: string[];
 	slug: string;
 };
 
-type Author = {
+interface Author  {
 	name: string;
 	imageUrl: string;
-};
-
-type Tag = {
-	name: string;
-	color: string;
 };
 
 export type { Post, Author };

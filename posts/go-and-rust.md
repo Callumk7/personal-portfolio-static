@@ -1,12 +1,12 @@
 ---
 title: "Rust vs Go: A Deep Dive for Backend Development Decision-Making"
 description: "Evaluating Rust and Go's strengths and weaknesses in backend development contexts with practical examples"
-coverImageUrl: "http://www.example.jpeg"
+coverImageUrl: "https://images.unsplash.com/photo-1523572989266-8239d24ebb68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4140&q=80"
 date: "2023-10-08"
 tags: ["programming", "go", "rust"]
 author:
-    name: "Callum Kloos"
-    imageUrl: "http://www.example.jpeg"
+  name: "Callum Kloos"
+  imageUrl: "http://www.example.jpeg"
 ---
 
 As an engineer or a team leader, one of the most critical decisions in embarking on a new backend project is choosing the right language. In this post, I'll take a deep dive comparing two prevalent languages, Rust and Go, and provide practical examples where one might prove beneficial over the other.

@@ -1,7 +1,7 @@
 export function PostTitle({ title }: { title: string }) {
   return (
-    <div className="w-3/4 mx-auto mt-10 mb-8">
-      <h1 className="font-black font-syne text-5xl">{title}</h1>
+    <div className="mb-8 mt-10">
+      <h1 className="font-syne text-5xl font-black text-primary-1">{title}</h1>
     </div>
   );
 }
