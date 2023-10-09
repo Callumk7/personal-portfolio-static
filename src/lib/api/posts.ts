@@ -23,8 +23,8 @@ export const getDataFromFile = (filePath: PathLike): Post => {
 		throw new Error("File missing required content");
 	}
 
-	const { title, description, coverImageUrl, date, author } = data;
-	if (!title || !description || !coverImageUrl || !date || !author) {
+	const { title, description, coverImageUrl, date, author, tags } = data;
+	if (!title || !description || !coverImageUrl || !date || !author || !tags) {
 		throw new Error("A required field is missing");
 	}
 
@@ -37,6 +37,7 @@ export const getDataFromFile = (filePath: PathLike): Post => {
 		coverImageUrl,
 		date,
 		author,
+		tags,
 		slug,
 	};
 };

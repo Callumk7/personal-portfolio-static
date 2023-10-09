@@ -3,6 +3,7 @@ title: "Rust vs Go: A Deep Dive for Backend Development Decision-Making"
 description: "Evaluating Rust and Go's strengths and weaknesses in backend development contexts with practical examples"
 coverImageUrl: "http://www.example.jpeg"
 date: "2023-10-08"
+tags: ["programming", "go", "rust"]
 author:
     name: "Callum Kloos"
     imageUrl: "http://www.example.jpeg"

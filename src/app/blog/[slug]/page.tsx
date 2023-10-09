@@ -2,6 +2,7 @@ import { PostBody } from "@/components/posts/body";
 import { PostTitle } from "@/components/posts/title";
 import markdownToHtml from "@/lib/api/markdown-to-html";
 import { getAllPostData, getPostBySlug } from "@/lib/api/posts";
+import Image from "next/image";
 
 // generate routes at build time
 export function generateStaticParams() {
@@ -18,6 +19,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
 
   return (
     <div>
+      <Image src={post?.coverImageUrl!} alt="cover image" width={260} height={160} />
       <PostTitle title={post?.title} />
       <PostBody content={content} />
     </div>

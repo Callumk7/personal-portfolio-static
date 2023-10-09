@@ -3,6 +3,7 @@ title: "Template Post"
 description: "This is a post that acts as a template for other posts to follow"
 coverImageUrl: "http://www.example.jpeg"
 date: "2023-10-06"
+tags: ["programming", "typescript"]
 author:
     name: "Callum Kloos"
     imageUrl: "http://www.example.jpeg"

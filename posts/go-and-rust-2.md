@@ -1,8 +1,9 @@
 ---
 title: "Go vs Rust: A Closer Look at Cloud-Native Microservices"
 description: "A detailed evaluation and code-based comparisons of Go and Rust, focusing on the development of Cloud-Native Microservices"
-coverImageUrl: "http://www.example.jpeg"
+coverImageUrl: "https://images.unsplash.com/photo-1607571587001-8c9815cb72b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1487&q=80"
 date: "2023-10-08"
+tags: ["programming", "go", "rust"]
 author:
     name: "Callum Kloos"
     imageUrl: "http://www.example.jpeg"
