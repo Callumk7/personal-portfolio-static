@@ -1,4 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { SocialLinks } from "../links";
 
 export function Navbar() {
   const links = [
@@ -14,15 +18,24 @@ export function Navbar() {
       name: "projects",
       href: "/projects",
     },
+    {
+      name: "about",
+      href: "/about",
+    },
   ];
 
+  const pathname = usePathname();
+
   return (
-    <nav className="w-full flex flex-row justify-start gap-x-9 pl-9 py-3 border-b border-foreground/20">
-      {links.map((link) => (
-        <Link key={link.name} href={link.href}>
-          {link.name}
-        </Link>
-      ))}
+    <nav className="flex w-full flex-row justify-between border-b border-foreground/20 px-48 py-3">
+      <div className="flex flex-row gap-x-9">
+        {links.map((link) => (
+          <Link key={link.name} href={link.href} className={pathname === link.href ? "text-primary-1" : "text-foreground"}>
+            {link.name}
+          </Link>
+        ))}
+      </div>
+      <SocialLinks />
     </nav>
   );
 }

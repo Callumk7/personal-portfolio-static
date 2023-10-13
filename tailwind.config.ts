@@ -11,6 +11,8 @@ const config: Config = {
 		extend: {
 			fontFamily: {
 				syne: ["var(--font-syne)", ...fontFamily.sans],
+				mono: ["var(--font-inconsolata)", ...fontFamily.mono],
+				grotesk: ["var(--font-grotesk)", ...fontFamily.sans]
 			},
 			colors: {
 				background: {

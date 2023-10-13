@@ -9,15 +9,12 @@ export default function BlogPage() {
 
   return (
     <>
-      <TagList tags={tags} />
       <div className="divide-y divide-foreground/20">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="md:leading-14 font-syne text-3xl font-extrabold leading-9 tracking-tight  text-foreground sm:text-4xl sm:leading-10 md:text-6xl">
             Latest
           </h1>
-          <p className="text-lg leading-7">
-            Posts on programming, learning and growing in a mad world
-          </p>
+          <TagList className="pb-10" tags={tags} />
         </div>
         {posts.map((post) => (
           <PostCard key={post.slug} post={post} />

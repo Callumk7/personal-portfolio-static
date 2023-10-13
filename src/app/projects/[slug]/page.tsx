@@ -31,12 +31,12 @@ export default async function PostPage({ params }: { params: { slug: string } })
       </div>
       <p className="text-sm py-2 text-foreground/80 w-full text-center">{date}</p>
       <Container>
+        <PostTitle title={post.title} />
         <div className="flex flex-row gap-x-5">
           {post.tags.map(tag => (
             <span className="bg-white text-background px-2 py-1 text-sm rounded-full font-mono" key={tag}>{tag}</span>
           ))}
         </div>
-        <PostTitle title={post.title} />
       </Container>
       <PostBody content={content} />
     </div>

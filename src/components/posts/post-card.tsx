@@ -12,9 +12,9 @@ export function PostCard({ post }: PostCardProps) {
       href={`/blog/${post.slug}`}
       className="flex flex-col gap-2 p-3 hover:bg-background-hover"
     >
-      <p className="text-sm">{date.toDateString()}</p>
+      <p className="text-sm font-mono text-foreground/60">{date.toDateString()}</p>
       <h1 className="font-syne font-bold text-lg text-primary-1">{post.title}</h1>
-      <p>{post.description}</p>
+      <p className="font-mono">{post.description}</p>
     </Link>
   );
 }
